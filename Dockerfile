@@ -31,4 +31,6 @@ WORKDIR /naclports/src
 RUN git checkout -b pepper_40 origin/pepper_40
 ENV PATH /naclports/src/bin:$PATH
 
+EXPOSE 5103
+
 #RUN naclports --toolchain=pnacl --arch=pnacl -v install bzip2
