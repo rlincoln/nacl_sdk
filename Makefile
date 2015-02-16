@@ -11,10 +11,10 @@ help:
 	@echo "  push     to push the image to the docker registry"
 
 build:
-	docker build -t $(ACCOUNTNAME)/nacl_sdk .
+	docker build -t $(ACCOUNTNAME)/nacl-sdk .
 
 login:
 	docker login -u $(ACCOUNTNAME)
 
 push: image login
-	docker push $(ACCOUNTNAME)/nacl_sdk
+	docker push $(ACCOUNTNAME)/nacl-sdk
