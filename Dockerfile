@@ -30,7 +30,7 @@ WORKDIR /naclports
 RUN gclient config --name=src https://chromium.googlesource.com/external/naclports.git
 RUN gclient sync
 WORKDIR /naclports/src
-#RUN git checkout -b pepper_$SDK_VERSION origin/pepper_$SDK_VERSION
+RUN git checkout -b pepper_$SDK_VERSION origin/pepper_$SDK_VERSION
 ENV PATH /naclports/src/bin:$PATH
 
 EXPOSE 5103
