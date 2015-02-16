@@ -3,7 +3,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 MAINTAINER Richard Lincoln, r.w.lincoln@gmail.com
 
-ENV SDK_VERSION 40
+ENV SDK_VERSION 39
 
 RUN apt-get update
 RUN apt-get install -y libc6-i386 lib32stdc++6 bzip2 wget python python-dev unzip git curl python-pip
